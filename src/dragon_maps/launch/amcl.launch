@@ -13,20 +13,34 @@
      <param name="global_frame_id" value="map"/>
 
      <!-- If you choose to define initial pose here -->
-     <param name="initial_pose_x" value="-5.1"/>
-     <param name="initial_pose_y" value="3.1"/>
-     <param name="initial_pose_a" value="-1.5708"/> 
+     <param name="initial_pose_x" value="0"/>
+     <param name="initial_pose_y" value="0"/>
+     <param name="initial_pose_a" value="-1.5707"/> 
 
      <!-- Overall Filter -->
-     <param name="max_particles" value="1500" />
+     <param name="min_particles" value ="100"/>
+     <param name="max_particles" value ="500"/>
      <param name="update_min_d" value="0.2" />
      <param name="update_min_a" value="0.2" />
      <param name="transform_tolerance" value="0.7" />
      
      <!-- Laser -->
+     <param name="laser_model_type" value="likelihood_field"/>
+     <param name="laser_min_range" value="-1.0"/>
+     <param name="laser_max_range" value="-1.0"/>
+     <param name="laser_max_beams" value="35"/>
+     <param name="laser_z_hit" value="0.91"/>
+     <param name="laser_z_rand" value="0.09"/>
+     <param name="laser_likelihood_max_dist" value="2.0"/>
 
-     <!-- Odometry -->
+
+     <!-- Odometry Model Parameters-->
      <param name="odom_model_type" value="diff-corrected" />
+     <param name="odom_alpha1" value="0.2"/>
+     <param name="odom_alpha2" value="0.2"/>
+     <param name="odom_alpha3" value="0.2"/>
+     <param name="odom_alpha4" value="0.2"/>
+
 
    </node>
 
