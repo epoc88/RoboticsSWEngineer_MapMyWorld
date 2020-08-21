@@ -210,7 +210,8 @@
     <child link="camera_optical"/>
   </joint>
 
-  <link name="camera_link_optical">
+<!-- Camera Optical Link -->
+ <link name="camera_optical">
   </link>
 
 
