@@ -146,6 +146,6 @@
 
  <!-- Colors -->
  <gazebo reference="chassis">
-        <material>Gazebo/Blue</material>
+        <material>Gazebo/Green</material>
  </gazebo>
 </robot>
